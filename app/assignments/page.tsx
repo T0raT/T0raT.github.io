@@ -25,16 +25,12 @@ export default function Assignments() {
   );
   const SkeletonVideo = () => (
     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-900 to-neutral-800">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube-nocookie.com/embed/F0ttyo85A9Y?si=VjuvlEtTbJT2vu1p&amp;controls=0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      <a
+        className="h-full w-full text-center align-middle"
+        href="https://youtu.be/F0ttyo85A9Y?si=Cr2dntt_2NQ7Ikew"
+      >
+        Click for link to video
+      </a>
     </div>
   );
   const items = [
@@ -70,7 +66,7 @@ export default function Assignments() {
     {
       title: "Assignment 4",
       description: "A webapp that demonstrates LSA using a search engine.",
-      header: <Skeleton />,
+      header: <SkeletonVideo />,
       github: "https://github.com/T0raT/tigerliu-assignment-4",
     },
   ];
