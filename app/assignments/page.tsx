@@ -14,6 +14,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import { title } from "process";
 
 export default function Assignments() {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
@@ -51,6 +52,12 @@ export default function Assignments() {
         "Using numpy and sklearn to visualize and analyze SVD dimensionality reduction.",
       header: <Skeleton />,
       github: "https://github.com/T0raT/tigerliu-assignment-3",
+    },
+    {
+      title: "Assignment 4",
+      description: "A webapp that demonstrates LSA using a search engine.",
+      header: <Skeleton />,
+      github: "https://github.com/T0raT/tigerliu-assignment-4",
     },
   ];
 
