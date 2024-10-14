@@ -29,7 +29,7 @@ export default function Assignments() {
         className="h-full w-full text-center align-middle"
         href="https://youtu.be/F0ttyo85A9Y?si=Cr2dntt_2NQ7Ikew"
       >
-        Click for link to video
+        Click for link to video, Video demo also in repo
       </a>
     </div>
   );
