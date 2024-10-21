@@ -69,6 +69,12 @@ export default function Assignments() {
       header: <SkeletonVideo />,
       github: "https://github.com/T0raT/tigerliu-assignment-4",
     },
+    {
+      title: "Assignment 5",
+      description: "Kaggle competition :^(",
+      header: <Skeleton />,
+      github: "https://github.com/T0raT/tigerliu-assignment-5",
+    },
   ];
 
   return (
