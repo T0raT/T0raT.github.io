@@ -75,6 +75,12 @@ export default function Assignments() {
       header: <Skeleton />,
       github: "https://github.com/T0raT/tigerliu-assignment-5",
     },
+    {
+      title: "Midterm Competition",
+      description: "It's joeover",
+      header: <Skeleton />,
+      github: "https://github.com/T0raT/tigerliu-midterm",
+    },
   ];
 
   return (
