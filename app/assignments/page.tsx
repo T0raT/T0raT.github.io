@@ -35,13 +35,6 @@ export default function Assignments() {
   );
   const items = [
     {
-      title: "Assignment 0",
-      description: "CS506 dummy assignment! Hopefully this page is visible :)",
-      header: <Skeleton />,
-      icon: "",
-      github: "https://github.com/T0raT/tigerliu-assignment-0",
-    },
-    {
       title: "Assignment 1",
       description:
         "Using numpy, Matplotlib and pandas to find the most optimal position to get in a CDS elevator 😎",
@@ -81,6 +74,12 @@ export default function Assignments() {
       header: <Skeleton />,
       github: "https://github.com/T0raT/tigerliu-midterm",
     },
+    {
+      title: "Assignment 6",
+      description: "Interactive linear regression web app",
+      header: <Skeleton />,
+      github: "https://github.com/T0raT/tigerliu-assignment-6",
+    },
   ];
 
   return (
@@ -95,7 +94,7 @@ export default function Assignments() {
         hoveredItem={hoveredItem}
       />
       <main
-        className={`font-futura bg-gruv-bg0-h z-50 overflow-clip relative h-full flex flex-col justify-center`}
+        className={`font-futura bg-gruv-bg0-h z-50 overflow-scroll relative h-full flex flex-col justify-center`}
       >
         <BackgroundBeamsWithCollision className={"h-full md:h-full dark"}>
           {navHover && (

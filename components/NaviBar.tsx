@@ -18,7 +18,7 @@ export const NaviBar = ({
     <nav
       onMouseEnter={() => setNavHover(true)}
       onMouseLeave={() => setNavHover(false)}
-      className="glass futura rounded-[0.5rem] absolute z-[60] bg-[#3c3836] top-10 left-5 flex justify-center py-4 tracking-in-expand-slow"
+      className="glass2 futura rounded-[0.5rem] absolute z-[60] bg-[#3c3836] top-10 left-5 flex justify-center py-4 tracking-in-expand-slow"
     >
       {/* Z index is 60 because <main> z index is 50 */}
       <Link href="/" prefetch={true}>
