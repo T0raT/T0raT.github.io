@@ -79,11 +79,11 @@ export default function Assignments() {
       github: "https://github.com/T0raT/tigerliu-assignment-6",
     },
     {
-      title: "Assignment 6",
+      title: "Assignment 7",
       description: "Interactive linear regression web app",
       header: <Skeleton />,
       icon: "",
-      github: "https://github.com/T0raT/tigerliu-assignment-6",
+      github: "https://github.com/T0raT/tigerliu-assignment-7",
     },
   ];
 
