@@ -35,14 +35,6 @@ export default function Assignments() {
   );
   const items = [
     {
-      title: "Assignment 1",
-      description:
-        "Using numpy, Matplotlib and pandas to find the most optimal position to get in a CDS elevator 😎",
-      header: <Skeleton />,
-      icon: "",
-      github: "https://github.com/T0raT/tigerliu-assignment-1",
-    },
-    {
       title: "Assignment 2",
       description:
         "Dynamic webapp that allows the user to step through K-Means visualization",
@@ -79,6 +71,12 @@ export default function Assignments() {
       description: "Interactive linear regression web app",
       header: <Skeleton />,
       github: "https://github.com/T0raT/tigerliu-assignment-6",
+    },
+    {
+      title: "Assignment 7",
+      description: "Linear Regression Simulations web app",
+      header: <Skeleton />,
+      github: "https://github.com/T0raT/tigerliu-assignment-7",
     },
   ];
 
