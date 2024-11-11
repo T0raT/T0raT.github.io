@@ -39,6 +39,7 @@ export default function Assignments() {
       description:
         "Dynamic webapp that allows the user to step through K-Means visualization",
       header: <Skeleton />,
+      icon: "",
       github: "https://github.com/T0raT/tigerliu-assignment-2",
     },
     {
@@ -46,37 +47,43 @@ export default function Assignments() {
       description:
         "Using numpy and sklearn to visualize and analyze SVD dimensionality reduction.",
       header: <Skeleton />,
+      icon: "",
       github: "https://github.com/T0raT/tigerliu-assignment-3",
     },
     {
       title: "Assignment 4",
       description: "A webapp that demonstrates LSA using a search engine.",
       header: <SkeletonVideo />,
+      icon: "",
       github: "https://github.com/T0raT/tigerliu-assignment-4",
     },
     {
       title: "Assignment 5",
       description: "Kaggle competition :^(",
       header: <Skeleton />,
+      icon: "",
       github: "https://github.com/T0raT/tigerliu-assignment-5",
     },
     {
       title: "Midterm Competition",
       description: "It's joeover",
       header: <Skeleton />,
+      icon: "",
       github: "https://github.com/T0raT/tigerliu-midterm",
     },
     {
       title: "Assignment 6",
       description: "Interactive linear regression web app",
       header: <Skeleton />,
+      icon: "",
       github: "https://github.com/T0raT/tigerliu-assignment-6",
     },
     {
-      title: "Assignment 7",
-      description: "Linear Regression Simulations web app",
+      title: "Assignment 6",
+      description: "Interactive linear regression web app",
       header: <Skeleton />,
-      github: "https://github.com/T0raT/tigerliu-assignment-7",
+      icon: "",
+      github: "https://github.com/T0raT/tigerliu-assignment-6",
     },
   ];
 
