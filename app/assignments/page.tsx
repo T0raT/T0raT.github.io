@@ -35,14 +35,6 @@ export default function Assignments() {
   );
   const items = [
     {
-      title: "Assignment 2",
-      description:
-        "Dynamic webapp that allows the user to step through K-Means visualization",
-      header: <Skeleton />,
-      icon: "",
-      github: "https://github.com/T0raT/tigerliu-assignment-2",
-    },
-    {
       title: "Assignment 3",
       description:
         "Using numpy and sklearn to visualize and analyze SVD dimensionality reduction.",
@@ -84,6 +76,13 @@ export default function Assignments() {
       header: <Skeleton />,
       icon: "",
       github: "https://github.com/T0raT/tigerliu-assignment-7",
+    },
+    {
+      title: "Assignment 8",
+      description: "Logistic regression cluster shift experiment web app",
+      header: <Skeleton />,
+      icon: "",
+      github: "https://github.com/T0raT/tigerliu-assignment-8",
     },
   ];
 
