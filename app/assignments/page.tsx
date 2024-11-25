@@ -35,14 +35,6 @@ export default function Assignments() {
   );
   const items = [
     {
-      title: "Assignment 3",
-      description:
-        "Using numpy and sklearn to visualize and analyze SVD dimensionality reduction.",
-      header: <Skeleton />,
-      icon: "",
-      github: "https://github.com/T0raT/tigerliu-assignment-3",
-    },
-    {
       title: "Assignment 4",
       description: "A webapp that demonstrates LSA using a search engine.",
       header: <SkeletonVideo />,
@@ -83,6 +75,13 @@ export default function Assignments() {
       header: <Skeleton />,
       icon: "",
       github: "https://github.com/T0raT/tigerliu-assignment-8",
+    },
+    {
+      title: "Assignment 9",
+      description: "Visualizing Neural Networks with python webapp",
+      header: <Skeleton />,
+      icon: "",
+      github: "https://github.com/T0raT/tigerliu-assignment-9",
     },
   ];
 
