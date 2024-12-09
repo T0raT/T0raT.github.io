@@ -83,6 +83,13 @@ export default function Assignments() {
       icon: "",
       github: "https://github.com/T0raT/tigerliu-assignment-9",
     },
+    {
+      title: "Assignment 10",
+      description: "Semantic Image Search with text and or images",
+      header: <Skeleton />,
+      icon: "",
+      github: "https://github.com/T0raT/tigerliu-assignment-10",
+    },
   ];
 
   return (
