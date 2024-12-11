@@ -9,11 +9,39 @@ export default function About() {
         <p className="mb-2">I AM</p>
         <RotateWords
           text=""
-          words={["A FRONTEND DEVELOPER.", "A COMPUTER SCIENTIST.", "A ???"]}
+          words={[
+            "A FRONTEND DEVELOPER.",
+            "A COMPUTER SCIENCE STUDENT",
+            "A ???",
+          ]}
         />
         <br />
 
-        <p>CURRENTLY, IM STUDYING THE THESE TOPICS </p>
+        <p className="mb-2">
+          CURRENTLY, I&apos;M STUDYING THESE TOPICS AT BOSTON UNIVERSITY:
+        </p>
+        <RotateWords
+          text=""
+          words={["EMBEDDED SYSTEMS", "FULLSTACK DEV", "COMPUTER GRAPHICS"]}
+        />
+        <br />
+
+        <p className="mb-2">
+          WHEN I&apos;M NOT BEIN DESTROYED BY MY COURSE WORK, I&apos;M
+        </p>
+        <RotateWords
+          text=""
+          words={[
+            "PLAYING GUITAR",
+            "GOING TO THE GYM",
+            "READING LIGHT NOVELS",
+            "DRAWING",
+            "ENJOYING MUSIC",
+            "ICE SKATING",
+            "TAKING PICTURES OF RANDOM STUFF",
+            "GAMING",
+          ]}
+        />
       </div>
     </div>
   );
