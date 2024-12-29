@@ -11,12 +11,12 @@ export default function About() {
           text=""
           words={[
             "A FRONTEND DEVELOPER.",
-            "A COMPUTER SCIENCE STUDENT",
+            "A COMPUTER SCIENCE STUDENT.",
             "A ???",
           ]}
         />
-        <br />
 
+        <br />
         <p className="mb-2">
           CURRENTLY, I&apos;M STUDYING THESE TOPICS AT BOSTON UNIVERSITY:
         </p>
@@ -25,7 +25,6 @@ export default function About() {
           words={["EMBEDDED SYSTEMS", "FULLSTACK DEV", "COMPUTER GRAPHICS"]}
         />
         <br />
-
         <p className="mb-2">
           WHEN I&apos;M NOT BEIN DESTROYED BY MY COURSE WORK, I&apos;M
         </p>
@@ -33,7 +32,7 @@ export default function About() {
           text=""
           words={[
             "PLAYING GUITAR",
-            "GOING TO THE GYM",
+            "GYMMING",
             "READING LIGHT NOVELS",
             "DRAWING",
             "ENJOYING MUSIC",

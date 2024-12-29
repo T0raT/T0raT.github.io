@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #181818;
+    --background: #0e0e0e;
     --foreground: #ededed;
   }
 }
@@ -38,17 +38,7 @@ body {
   position: absolute;
   inset: -200%;
   background-image: url("/noise.png");
-  opacity: 0.2;
+  opacity: 0.15;
   z-index: 0;
   pointer-events: none;
-  animation: shift 0.2s linear infinite both;
-}
-
-@keyframes shift {
-  0% {
-    transform: translateX(10%) translateY(10%);
-  }
-  100% {
-    transform: translateX(-10%) translateY(-10%);
-  }
 }

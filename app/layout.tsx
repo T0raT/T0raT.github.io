@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import FuzzyOverlay from "./components/NoiseOverlay";
 
 // Local font
 const vcrFont = localFont({
@@ -30,7 +31,10 @@ export default function RootLayout({
       <head />
       <body className={`${vcrFont.variable} antialiased`}>
         <div className="root-container">
-          <div className="root-content">{children}</div>
+          <div className="root-content">
+            <FuzzyOverlay />
+            {children}
+          </div>
           <div className="fuzzy-overlay"></div>
         </div>
       </body>
