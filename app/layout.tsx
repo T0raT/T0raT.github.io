@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Header from "./components/Header";
 import localFont from "next/font/local";
 import "./globals.css";
 import FuzzyOverlay from "./components/NoiseOverlay";
@@ -33,7 +34,10 @@ export default function RootLayout({
         <div className="root-container">
           <div className="root-content">
             <FuzzyOverlay />
-            {children}
+            <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-vcr)] w-full">
+              <Header />
+              {children}
+            </div>
           </div>
           <div className="fuzzy-overlay"></div>
         </div>
