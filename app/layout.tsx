@@ -29,8 +29,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* So, this is the idea of the layout of this website.
+
+          The main page auto directs to /about.
+          Since the header does not change, it's better to call it once here instead of every other page.
+          
+          NOTE ON NAVBAR: Pretty sure it cant go on this page since I also I need to animate and keep track of state? 
+      */}
       <head />
       <body className={`${vcrFont.variable} antialiased`}>
+        {/* Yeah so root-container and root content is styled in global.css :/ */}
         <div className="root-container">
           <div className="root-content">
             <FuzzyOverlay />

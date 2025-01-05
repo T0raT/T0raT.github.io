@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className="w-[500px] absolute top-50 left-50">
+      {/* First Paragraph Section */}
       <p className="mb-2">I AM</p>
       <RotateWords
         text=""
@@ -14,6 +15,7 @@ export default function About() {
         ]}
       />
 
+      {/* Second paragraph Section */}
       <br />
       <p className="mb-2">
         CURRENTLY, I&apos;M STUDYING THESE TOPICS AT BOSTON UNIVERSITY:
@@ -22,6 +24,8 @@ export default function About() {
         text=""
         words={["EMBEDDED SYSTEMS", "FULLSTACK DEV", "COMPUTER GRAPHICS"]}
       />
+
+      {/* Third paragraph Section */}
       <br />
       <p className="mb-2">
         WHEN I&apos;M NOT BEIN DESTROYED BY MY COURSE WORK, I&apos;M
