@@ -1,9 +1,10 @@
+import NavBar from "../components/NavBar";
 import { RotateWords } from "../components/RotateWords";
-import Link from "next/link";
 
 export default function About() {
   return (
     <div className="w-[500px] absolute top-50 left-50">
+      <NavBar />
       {/* First Paragraph Section */}
       <p className="mb-2">I AM</p>
       <RotateWords
@@ -43,7 +44,6 @@ export default function About() {
           "GAMING",
         ]}
       />
-      <Link href="/contact">Contact</Link>
     </div>
   );
 }

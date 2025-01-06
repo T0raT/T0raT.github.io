@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import localFont from "next/font/local";
 import "./globals.css";
 import FuzzyOverlay from "./components/NoiseOverlay";
+import NavBar from "./components/NavBar";
 
 // Local font
 const vcrFont = localFont({
@@ -38,7 +39,11 @@ export default function RootLayout({
       */}
       <head />
       <body className={`${vcrFont.variable} antialiased`}>
-        {/* Yeah so root-container and root content is styled in global.css :/ */}
+        {/* Yeah so root-container and root content is styled in global.css :/ 
+        
+        'root-container' exists because of fuzzy-overlay.
+        There is probably another way around this but for now it works lol.
+        */}
         <div className="root-container">
           <div className="root-content">
             <FuzzyOverlay />

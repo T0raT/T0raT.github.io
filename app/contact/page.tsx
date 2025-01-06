@@ -1,5 +1,12 @@
+import NavBar from "../components/NavBar";
+
 function ContactDetails() {
-  return <div>hi</div>;
+  return (
+    <div>
+      <NavBar />
+      hi
+    </div>
+  );
 }
 
 export default ContactDetails;
