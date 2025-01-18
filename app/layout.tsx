@@ -34,13 +34,10 @@ export default function RootLayout({
 
           The main page auto directs to /about.
           Since the header does not change, it's better to call it once here instead of every other page.
-          
-          NOTE ON NAVBAR: Pretty sure it cant go on this page since I also I need to animate and keep track of state? 
       */}
       <head />
       <body className={`${vcrFont.variable} antialiased`}>
         {/* Yeah so root-container and root content is styled in global.css :/ 
-        
         'root-container' exists because of fuzzy-overlay.
         There is probably another way around this but for now it works lol.
         */}

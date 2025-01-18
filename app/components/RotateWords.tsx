@@ -20,7 +20,7 @@ export function RotateWords({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div className="text-center font-bold tracking-tighter w-fit gap-1.5">
+    <div className="text-center tracking-tighter w-fit gap-1.5">
       {text}{" "}
       <AnimatePresence mode="wait">
         <motion.p

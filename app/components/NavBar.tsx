@@ -5,7 +5,7 @@ import { useState } from "react";
 import { cn } from "@/util/cn";
 
 const NavBar = () => {
-  const items = ["about", "projects", "contact"];
+  const items = ["about", "projects", "contact", "temp1", "temp2", "temp3"];
   const [currPage, setCurrPage] = useState(0);
 
   /**
@@ -27,15 +27,29 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="fixed border-red-600 border-2 w-[170px] left-0 top-0 h-full z-10">
-      <ul className="flex flex-col">
+    <nav className="fixed w-[160px] left-0 top-0 h-full z-10 flex flex-col justify-center">
+      <ul>
         {items.map((item, index) => (
+          // Holy shit I think I way over complicated this
+          // I don't think I have to do this but im stubborn LOL
+          // But tbh this is a very ugly way of going about this nav bar
           <li key={index}>
-            <Link
-              className={cn("", { "text-red-600": currPage === index })}
-              href={item}
-            >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
+            <Link href={item}>
+              {/* If list item is the current page, highlights background and renders the little triangle */}
+              {currPage === index ? (
+                <div className="link-container flex justify-between">
+                  <div className="ml-3">►</div>
+                  <h3 className="text-xl w-[130px] bg-white text-black px-2 tracking-[0.15em]">
+                    {item.toLocaleUpperCase()}
+                  </h3>
+                </div>
+              ) : (
+                <div className="link-container flex justify-end">
+                  <h3 className="text-xl w-[130px] px-2 tracking-[0.15em]">
+                    {item.toLocaleUpperCase()}
+                  </h3>
+                </div>
+              )}
             </Link>
           </li>
         ))}
