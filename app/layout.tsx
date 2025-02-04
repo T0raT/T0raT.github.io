@@ -3,9 +3,8 @@ import Header from "./components/Header";
 import localFont from "next/font/local";
 import "./globals.css";
 import FuzzyOverlay from "./components/NoiseOverlay";
-import NavBar from "./components/NavBar";
 
-// Local font
+// How to add local fonts that isn't part of NEXT
 const vcrFont = localFont({
   src: [
     {
@@ -15,7 +14,7 @@ const vcrFont = localFont({
     },
   ],
   variable: "--font-vcr",
-  display: "swap", // Prevents invisible text
+  display: "swap", // Prevents invisible text, actually I have no idea what this means
 });
 
 export const metadata: Metadata = {
