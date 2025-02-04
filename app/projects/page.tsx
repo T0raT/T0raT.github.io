@@ -1,12 +1,12 @@
 import NavBar from "../components/NavBar";
 
-function ContactDetails() {
+function ProjectsDetails() {
   return (
     <div>
       <NavBar />
-      Contact section
+      Projects Section
     </div>
   );
 }
 
-export default ContactDetails;
+export default ProjectsDetails;
