@@ -13,6 +13,7 @@ function ProjectsDetails() {
   return (
     <div>
       <NavBar />
+      Project section under development (´◡`)
       <div className="kanban-card border border-red-500 rounded-tl-lg rounded-tr-lg rounded-bl-lg w-40">
         skeleton
       </div>

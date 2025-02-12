@@ -4,7 +4,7 @@ function ContactDetails() {
   return (
     <div>
       <NavBar />
-      Contact section
+      Contact section under developement ᕙ(⇀‸↼‶)ᕗ
     </div>
   );
 }

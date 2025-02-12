@@ -2,10 +2,9 @@
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { cn } from "@/util/cn";
 
 const NavBar = () => {
-  const items = ["about", "projects", "contact", "temp1", "temp2", "temp3"];
+  const items = ["about", "projects", "contact"];
   const [currPage, setCurrPage] = useState(0);
 
   /**
