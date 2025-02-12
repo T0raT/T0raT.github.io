@@ -10,9 +10,9 @@ export default function About() {
       <RotateWords
         text=""
         words={[
-          "A FRONTEND DEVELOPER.",
-          "A COMPUTER SCIENCE STUDENT.",
-          "A ???",
+          "A FRONTEND DEVELOPER",
+          "A COMPUTER SCIENCE STUDENT",
+          "A GAMER",
         ]}
       />
 
@@ -28,9 +28,7 @@ export default function About() {
 
       {/* Third paragraph Section */}
       <br />
-      <p className="mb-2">
-        WHEN I&apos;M NOT BEIN DESTROYED BY MY COURSE WORK, I&apos;M
-      </p>
+      <p className="mb-2">WHEN I&apos;M NOT GRINDING COURSE WORK I&apos;M:</p>
       <RotateWords
         text=""
         words={[
