@@ -14,7 +14,7 @@ export function RotateWords({
   React.useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 5000);
+    }, 3000);
     // Clean up interval on unmount
     return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
