@@ -18,7 +18,7 @@ const vcrFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "My attempt at reh.at",
+  title: "TigerLiu",
   description: "If you reading this, you a nerd",
 };
 
