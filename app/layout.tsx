@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import localFont from "next/font/local";
 import "./globals.css";
 import FuzzyOverlay from "./components/NoiseOverlay";
+import NavBar from "./components/NavBar";
 
 // How to add local fonts that isn't part of NEXT
 const vcrFont = localFont({
@@ -41,16 +42,14 @@ export default function RootLayout({
         There is probably another way around this but for now it works lol.
         */}
         <div className="root-container">
-          <div className="root-content">
-            <FuzzyOverlay />
-            <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-vcr)] w-full">
-              <Header />
-              {children}
-            </div>
+          <div className="root-content font-[family-name:var(--font-vcr)]">
+            <Header />
+            {children}
           </div>
           <div className="fuzzy-overlay"></div>
         </div>
       </body>
+      <FuzzyOverlay />
     </html>
   );
 }

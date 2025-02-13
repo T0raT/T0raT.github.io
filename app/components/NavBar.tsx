@@ -26,7 +26,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="fixed w-[160px] left-0 top-0 h-full z-10 flex flex-col justify-center">
+    <nav className="fixed w-[160px] left-0 top-0 h-full z-10 flex flex-col justify-center font-[family-name:var(--font-vcr)]">
       <ul>
         {items.map((item, index) => (
           // Holy shit I think I way over complicated this
