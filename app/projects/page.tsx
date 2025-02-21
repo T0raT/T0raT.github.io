@@ -16,7 +16,7 @@ function ProjectsDetails() {
       <NavBar />
       <div className="top-80">
         <div className="kanban-card border border-red-500 rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl w-72 flex flex-col">
-          <div className="relative w-full">
+          <div className="img-container relative w-full">
             <Image
               src="/images/zenless_zone_zero.jpg"
               alt="image here"
@@ -25,7 +25,11 @@ function ProjectsDetails() {
               className="rounded-tl-3xl rounded-tr-3xl object-left-bottom"
             />
           </div>
-          <div className="desc-section">desc goes here</div>
+          <div className="description-container">
+            <h2 className="project-title"></h2>
+            <div className="divider" />
+            <p className="project-description"></p>
+          </div>
         </div>
       </div>
     </>

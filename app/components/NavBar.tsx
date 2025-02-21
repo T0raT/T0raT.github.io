@@ -23,6 +23,8 @@ const NavBar = () => {
         break;
       }
     }
+    // Honestly, this eslint rule is annoying as fuck, I get it but damn
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
