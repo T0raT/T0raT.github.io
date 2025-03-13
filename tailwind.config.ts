@@ -12,6 +12,16 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        borderPulse: {
+          "0%": { borderColor: "yellow" },
+          "50%": { borderColor: "limegreen" },
+          "100%": { borderColor: "yellow" },
+        },
+      },
+      animation: {
+        borderPulse: "borderPulse 4s infinite ease-in-out",
+      },
     },
   },
   plugins: [],

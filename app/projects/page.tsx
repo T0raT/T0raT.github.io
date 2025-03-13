@@ -15,7 +15,10 @@ function ProjectsDetails() {
     <>
       <NavBar />
       <div className="top-80">
-        <div className="kanban-card border border-red-500 rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl w-72 flex flex-col">
+        <div
+          className="kanban-card border-[3px] border-black hover:animate-borderPulse
+          rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl w-72 flex flex-col"
+        >
           <div className="img-container relative w-full">
             <Image
               src="/images/zenless_zone_zero.jpg"
@@ -26,9 +29,12 @@ function ProjectsDetails() {
             />
           </div>
           <div className="description-container">
-            <h2 className="project-title"></h2>
+            <h2 className="project-title">Example Project</h2>
             <div className="divider" />
-            <p className="project-description"></p>
+            <p className="project-description">
+              I used *insert 5 billion dogshit stacks* to build to *insert LLM
+              wrapper*
+            </p>
           </div>
         </div>
       </div>
