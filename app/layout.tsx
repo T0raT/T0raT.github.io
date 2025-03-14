@@ -18,8 +18,8 @@ const vcrFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "My attempt at reh.at",
-  description: "If you reading this, you a nerd",
+  title: "tigertiger",
+  description: "lmfao nerd",
 };
 
 export default function RootLayout({
