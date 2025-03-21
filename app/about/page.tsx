@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>
       <NavBar />
-      <div className="w-[500px] absolute top-50 left-50">
+      <div className="w-[500px] mw-2">
         {/* First Paragraph Section */}
         <p className="mb-2">I AM</p>
         <RotateWords

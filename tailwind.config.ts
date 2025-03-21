@@ -22,6 +22,9 @@ export default {
       animation: {
         borderPulse: "borderPulse 4s infinite ease-in-out",
       },
+      screens: {
+        dk: "70rem",
+      },
     },
   },
   plugins: [],
