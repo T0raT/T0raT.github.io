@@ -20,8 +20,7 @@ body {
 
 .root-content {
   height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
   z-index: 5;
   position: relative;
 }

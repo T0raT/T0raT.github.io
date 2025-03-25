@@ -1,11 +1,9 @@
-import NavBar from "../components/NavBar";
 import { RotateWords } from "../components/RotateWords";
 
 export default function About() {
   return (
     <>
-      <NavBar />
-      <div className="w-[500px] mw-2">
+      <div className="w-[500px] mw-2 m-auto my-auto">
         {/* First Paragraph Section */}
         <p className="mb-2">I AM</p>
         <RotateWords

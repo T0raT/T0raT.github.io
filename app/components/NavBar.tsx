@@ -18,7 +18,10 @@ const NavBar = () => {
     { name: "CONTACT", href: "/contact" },
   ];
   return (
-    <nav className="fixed w-[160px] left-0 top-0 h-full z-10 flex flex-col justify-center font-[family-name:var(--font-vcr)]">
+    <nav
+      className="fixed w-[160px] left-0 top-0 h-full 
+      z-10 flex flex-col justify-center font-[family-name:var(--font-vcr)]"
+    >
       <ul>
         {items.map((item, index) => (
           // This is a little more refined than before.

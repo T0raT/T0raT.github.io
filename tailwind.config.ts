@@ -23,7 +23,8 @@ export default {
         borderPulse: "borderPulse 4s infinite ease-in-out",
       },
       screens: {
-        dk: "70rem",
+        dsk: "70rem",
+        tb: "55rem",
       },
     },
   },
