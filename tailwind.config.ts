@@ -27,7 +27,8 @@ export default {
         width: "width",
       },
       screens: {
-        dsk: "83rem",
+        dsk: "75.688rem",
+        tb: "72.688rem"
       },
     },
   },

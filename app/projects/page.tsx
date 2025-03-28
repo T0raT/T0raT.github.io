@@ -11,15 +11,16 @@ function ProjectsDetails() {
    *  - Constant width (so image should be width: 100%), dynmaic height
    * */
   return (
-    <>
-      <div
-        className="h-[90%] relative top-36 grid
-        grid-cols-3 items-start animate-smoothTrans 
-        dsk:w-[63rem] md:w-[50rem] w-[35rem] mx-auto gap-10"
-      >
-        <ProjectCard />
-      </div>
-    </>
+    <div
+      className="h-[90%] relative top-36 
+      flex flex-wrap flex-row justify-center items-start animate-smoothTrans 
+      dsk:w-[70rem] tb:w-[50rem] w-[17rem] mx-auto gap-10 overflow-auto
+      no-scrollbar"
+    >
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+    </div>
   );
 }
 
