@@ -13,9 +13,9 @@ function ProjectsDetails() {
   return (
     <>
       <div
-        className="h-[90%] relative top-36 grid grid-cols-1 
-        tb:grid-cols-2 dsk:grid-cols-3 items-start 
-        w-[70rem] w-min[20rem] mx-auto gap-10"
+        className="h-[90%] relative top-36 grid
+        grid-cols-3 items-start animate-smoothTrans 
+        dsk:w-[63rem] md:w-[50rem] w-[35rem] mx-auto gap-10"
       >
         <ProjectCard />
       </div>

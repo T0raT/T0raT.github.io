@@ -21,10 +21,13 @@ export default {
       },
       animation: {
         borderPulse: "borderPulse 4s infinite ease-in-out",
+        smoothTrans: "width 0.5s ease-in-out",
+      },
+      transitionProperty: {
+        width: "width",
       },
       screens: {
-        dsk: "70rem",
-        tb: "55rem",
+        dsk: "83rem",
       },
     },
   },
