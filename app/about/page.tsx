@@ -3,7 +3,7 @@ import { RotateWords } from "../components/RotateWords";
 export default function About() {
   return (
     <>
-      <div className="w-[500px] mw-2 m-auto my-auto">
+      <div className="w-[450px]  mw-2 mx-auto my-auto text-left px-8">
         {/* First Paragraph Section */}
         <p className="mb-2">I AM</p>
         <RotateWords

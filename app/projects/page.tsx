@@ -1,6 +1,6 @@
 import ProjectCard from "../components/ProjectCard";
 
-function ProjectsDetails() {
+
   /* The plan for this is to create something
    * similar to ZZZ's interknot board, practically a kanban board.
    *
@@ -10,18 +10,22 @@ function ProjectsDetails() {
    * 2. Prject Description.
    *  - Constant width (so image should be width: 100%), dynmaic height
    * */
+
+function ProjectsDetails() {
   return (
-    <div
-      className="h-[90%] relative top-36 
-      flex flex-wrap flex-row justify-center items-start animate-smoothTrans 
-      dsk:w-[70rem] tb:w-[50rem] w-[17rem] mx-auto gap-10 overflow-auto
-      no-scrollbar"
-    >
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-    </div>
+    <main className="min-h-screen pt-36 px-4 animate-smoothTrans mx-auto overflow-y-auto">
+      <section
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 
+                   w-full max-w-[70rem] mx-auto overflow-y-auto no-scrollbar z-10"
+      >
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        {/* Add more cards as needed */}
+      </section>
+    </main>
   );
 }
+
 
 export default ProjectsDetails;

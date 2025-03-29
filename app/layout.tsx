@@ -42,7 +42,7 @@ export default function RootLayout({
           
         */}
         <div className="root-container">
-          <div className="root-content font-[family-name:var(--font-vcr)]">
+          <div className="root-content font-[family-name:var(--font-vcr)] z-10">
             <Header />
             <NavBar />
             {children}

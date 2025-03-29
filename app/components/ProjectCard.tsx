@@ -9,9 +9,9 @@ function ProjectCard() {
     <div
       className="kanban-card border-[3px] border-black hover:animate-borderPulse
                 rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl w-[17rem] 
-                flex flex-col overflow-hidden cursor-default"
+                flex flex-col overflow-hidden cursor-default z-0"
     >
-      <div className="img-container relative">
+      <div className="img-container relative z-0">
         <Image
           src="/images/zenless_zone_zero.jpg"
           alt="image here"
