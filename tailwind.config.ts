@@ -8,8 +8,12 @@ export default {
   ],
   theme: {
     screens: {
+      // dsk, tb are project page only.
       dsk: "80rem",
       tb: "60rem",
+
+      // This is specifically for hiding navbar and displaying header
+      // as a navigation bar.
       hdr: "50rem",
     },
     extend: {
