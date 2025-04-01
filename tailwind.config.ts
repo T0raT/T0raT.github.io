@@ -7,6 +7,10 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      dsk: "80rem",
+      tb: "60rem",
+    },
     extend: {
       colors: {
         background: "var(--background)",
@@ -25,10 +29,6 @@ export default {
       },
       transitionProperty: {
         width: "width",
-      },
-      screens: {
-        dsk: "75.688rem",
-        tb: "72.688rem"
       },
     },
   },
