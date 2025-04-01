@@ -19,7 +19,7 @@ const NavBar = () => {
   ];
   return (
     <nav
-      className="fixed w-[160px] left-0 top-0 h-full 
+      className="invisible hdr:visible fixed w-[160px] left-0 top-0 h-full 
       z-10 flex flex-col justify-center font-[family-name:var(--font-vcr)]"
     >
       <ul>

@@ -10,6 +10,7 @@ export default {
     screens: {
       dsk: "80rem",
       tb: "60rem",
+      hdr: "50rem",
     },
     extend: {
       colors: {
