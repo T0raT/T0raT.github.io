@@ -4,6 +4,13 @@ import Image from "next/image";
  * A project card component that displays the project image and description.
  * Styled to mimick ZZZ's interknot board.
  */
+
+interface ProjectCardProps {
+  imgurl?: string;
+  title?: string;
+  desc?: string;
+}
+
 function ProjectCard() {
   return (
     <div

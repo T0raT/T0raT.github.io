@@ -13,7 +13,7 @@ import ProjectCard from "../components/ProjectCard";
 function ProjectsDetails() {
   return (
     <main
-      className="min-h-screen pt-36 px-4 
+      className="min-h-screen pt-36 pb-20 px-4 
       animate-smoothTrans mx-auto overflow-y-auto no-scrollbar"
     >
       <section
