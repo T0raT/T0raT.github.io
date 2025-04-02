@@ -6,12 +6,12 @@ import Image from "next/image";
  */
 
 interface ProjectCardProps {
-  imgurl?: string;
+  imgUrl?: string;
   title?: string;
   desc?: string;
 }
 
-function ProjectCard() {
+function ProjectCard({ imgUrl, title, desc }: ProjectCardProps) {
   return (
     <div
       className="kanban-card border-[3px] border-black hover:animate-borderPulse
