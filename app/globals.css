@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1a1a;
-    --foreground: #ededed;
-  }
+  --foreground: #ffffff;
+  --background: #171717;
 }
 
 body {
@@ -27,8 +20,7 @@ body {
 
 .root-content {
   height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
   z-index: 5;
   position: relative;
 }
@@ -41,4 +33,16 @@ body {
   opacity: 0.15;
   z-index: 0;
   pointer-events: none;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const FuzzyOverlay = () => {
   useEffect(() => {
     const fuzzyOverlay = document.querySelector(
-      ".fuzzy-overlay"
+      ".fuzzy-overlay",
     ) as HTMLElement | null;
     if (fuzzyOverlay) {
       const interval = setInterval(() => {

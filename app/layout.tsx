@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import localFont from "next/font/local";
 import "./globals.css";
 import FuzzyOverlay from "./components/NoiseOverlay";
+import NavBar from "./components/NavBar";
 
 // How to add local fonts that isn't part of NEXT
 const vcrFont = localFont({
@@ -19,7 +20,7 @@ const vcrFont = localFont({
 
 export const metadata: Metadata = {
   title: "TigerLiu",
-  description: "If you reading this, you a nerd",
+  description: "lmfao nerd",
 };
 
 export default function RootLayout({
@@ -36,21 +37,20 @@ export default function RootLayout({
       */}
       <head />
       <body className={`${vcrFont.variable} antialiased`}>
-        {/* Yeah so root-container and root content is styled in global.css :/ 
-        'root-container' exists because of fuzzy-overlay.
-        There is probably another way around this but for now it works lol.
+        {/* The reason for 2 containers
+          1. root-container exist specifically for fuzzy overlay.
+          
         */}
         <div className="root-container">
-          <div className="root-content">
-            <FuzzyOverlay />
-            <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-vcr)] w-full">
-              <Header />
-              {children}
-            </div>
+          <div className="root-content font-[family-name:var(--font-vcr)] z-10">
+            <Header />
+            <NavBar />
+            {children}
           </div>
           <div className="fuzzy-overlay"></div>
         </div>
       </body>
+      <FuzzyOverlay />
     </html>
   );
 }
