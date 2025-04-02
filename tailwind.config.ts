@@ -9,7 +9,7 @@ export default {
   theme: {
     screens: {
       // dsk, tb are project page only.
-      dsk: "80rem",
+      dsk: "81.875rem",
       tb: "60rem",
 
       // This is specifically for hiding navbar and displaying header

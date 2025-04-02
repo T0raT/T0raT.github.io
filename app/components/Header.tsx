@@ -46,13 +46,27 @@ export default function Header() {
           <ul className="space-y-8 text-2xl text-center">
             {items.map((item) => (
               <li key={item.href} onClick={() => setIsModalOpen(false)}>
-                <Link
-                  href={item.href}
-                  className={`block px-4 py-2 tracking-wide ${
-                    pathname === item.href ? "underline" : ""
-                  }`}
-                >
-                  {item.name}
+                <Link href={item.href} key={item.href}>
+                  {/* Just checks if current pathname matches the href in items.
+                  If it matches, highlight the current page.
+              */}
+                  {pathname === item.href ? (
+                    <div className="link-container flex justify-between">
+                      <div className="mr-2">►</div>
+                      <h3
+                        className="text-xl w-[130px] bg-white 
+                        text-black px-2 tracking-[0.13em]"
+                      >
+                        {item.name}
+                      </h3>
+                    </div>
+                  ) : (
+                    <div className="link-container flex justify-end">
+                      <h3 className="text-xl w-[130px] px-2 tracking-[0.13em]">
+                        {item.name}
+                      </h3>
+                    </div>
+                  )}
                 </Link>
               </li>
             ))}

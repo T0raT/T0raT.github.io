@@ -33,7 +33,10 @@ const NavBar = () => {
               {pathname === item.href ? (
                 <div className="link-container flex justify-between">
                   <div className="ml-3">►</div>
-                  <h3 className="text-xl w-[130px] bg-white text-black px-2 tracking-[0.15em]">
+                  <h3
+                    className="text-xl w-[130px] bg-white 
+                    text-black px-2 tracking-[0.15em]"
+                  >
                     {item.name}
                   </h3>
                 </div>
