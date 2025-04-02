@@ -26,6 +26,7 @@ function ProjectCard({ imgUrl, title, desc }: ProjectCardProps) {
           width={160}
           height={0} // Height set dynamically with CSS
           style={{ height: "auto" }} // Keeps aspect ratio
+          quality={100}
           className="rounded-tl-[1.35rem] rounded-tr-[1.35rem] object-cover w-full"
         />
       </div>
