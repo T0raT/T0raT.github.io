@@ -15,17 +15,17 @@ function ProjectsDetails() {
     {
       imgUrl: "/images/spotify-tracker.png",
       title: "Spotify Tracker",
-      desc: "The most innovative project to date(trust me)! A simple spotify statistic tracker with an bonus album cover generator.",
+      desc: "The most innovative project to date(trust me)! A simple spotify statistic tracker with a bonus album cover generator.",
     },
     {
       imgUrl: "/images/this-website.png",
       title: "This website!",
-      desc: "No UI libraries (for now), all components made by myself. Made with TypeScript, Next.js, Tailwind CSS. (ThreeJs is next!)",
+      desc: "No UI libraries (for now), all components made by myself. Built with TypeScript, Next.js, Tailwind CSS. (ThreeJs is next!)",
     },
     {
       imgUrl: "/images/h2h.png",
       title: "H2H Market",
-      desc: "An interactive 2-sided digital market game. UI/UX developed by me and my colleague.",
+      desc: "An interactive 2-sided digital market game. UI/UX developed by me and my colleague at Platform Governance Research Lab.",
     },
   ];
 
