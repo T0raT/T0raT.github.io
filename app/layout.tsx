@@ -18,6 +18,18 @@ const vcrFont = localFont({
   display: "swap", // Prevents invisible text, actually I have no idea what this means
 });
 
+const departFont = localFont({
+  src: [
+    {
+      path: "../public/fonts/DepartureMono-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-departure",
+  display: "swap", // Prevents invisible text, actually I have no idea what this means
+});
+
 export const metadata: Metadata = {
   title: "TigerLiu",
   description: "lmfao nerd",
@@ -36,13 +48,15 @@ export default function RootLayout({
           Since the header does not change, it's better to call it once here instead of every other page.
       */}
       <head />
-      <body className={`${vcrFont.variable} antialiased`}>
+      <body
+        className={`${vcrFont.variable} ${departFont.variable} antialiased`}
+      >
         {/* The reason for 2 containers
           1. root-container exist specifically for fuzzy overlay.
           
         */}
         <div className="root-container">
-          <div className="root-content font-[family-name:var(--font-vcr)] z-10">
+          <div className="root-content font-[family-name:var(--font-departure)] z-10">
             <Header />
             <NavBar />
             {children}
