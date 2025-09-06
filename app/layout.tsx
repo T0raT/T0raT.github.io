@@ -42,7 +42,7 @@ export default function RootLayout({
       <body
         className={`${vcrFont.variable} ${departFont.variable} antialiased`}
       >
-        {children}
+        <div className="relative min-h-dvh">{children}</div>
       </body>
     </html>
   );
