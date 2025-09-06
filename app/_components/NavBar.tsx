@@ -30,6 +30,7 @@ const NavBar = () => {
 
           return (
             <Link href={item.href} key={index}>
+              {/* Wrapper div around small triangle and h3 page title */}
               <div
                 className={`link-container flex ${
                   isActive ? "justify-between" : "justify-end"

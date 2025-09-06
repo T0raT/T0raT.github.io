@@ -27,7 +27,7 @@
   inset: -200%;
   background-image: url("/noise.svg");
   opacity: 0.15;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
 }
 

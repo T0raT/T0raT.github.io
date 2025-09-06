@@ -53,7 +53,7 @@ export default function RootLayout({
             {children}
           </div>
 
-          <div className="fuzzy-container">
+          <div className="fuzzy-container -z-1">
             <FuzzyOverlay />
           </div>
         </div>
