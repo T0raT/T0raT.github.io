@@ -1,4 +1,4 @@
-function ContactDetails() {
+export default function ContactDetails() {
   return (
     <div className="m-auto px-5 text-center">
       <p className="inline">tigerliu@bu.edu</p>
@@ -17,5 +17,3 @@ function ContactDetails() {
     </div>
   );
 }
-
-export default ContactDetails;

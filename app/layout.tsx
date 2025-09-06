@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import Header from "./components/Header";
 import localFont from "next/font/local";
+import Header from "./_components/Header";
+import NavBar from "./_components/NavBar";
+import FuzzyOverlay from "./_components/FuzzyOverlay";
 import "./globals.css";
-import FuzzyOverlay from "./components/NoiseOverlay";
-import NavBar from "./components/NavBar";
 
-// How to add local fonts that isn't part of NEXT
+export const metadata: Metadata = {
+  title: "TigerLiu",
+  description: "Interknot?",
+};
+
+/* Local fonts */
 const vcrFont = localFont({
   src: [
     {
@@ -15,7 +20,7 @@ const vcrFont = localFont({
     },
   ],
   variable: "--font-vcr",
-  display: "swap", // Prevents invisible text, actually I have no idea what this means
+  display: "swap",
 });
 
 const departFont = localFont({
@@ -30,11 +35,6 @@ const departFont = localFont({
   display: "swap", // Prevents invisible text, actually I have no idea what this means
 });
 
-export const metadata: Metadata = {
-  title: "TigerLiu",
-  description: "lmfao nerd",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -42,29 +42,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* So, this is the idea of the layout of this website.
-
-          The main page auto directs to /about.
-          Since the header does not change, it's better to call it once here instead of every other page.
-      */}
-      <head />
       <body
         className={`${vcrFont.variable} ${departFont.variable} antialiased`}
       >
-        {/* The reason for 2 containers
-          1. root-container exist specifically for fuzzy overlay.
-          
-        */}
-        <div className="root-container">
-          <div className="root-content font-[family-name:var(--font-departure)] z-10">
-            <Header />
-            <NavBar />
+        {/* Site shell */}
+        <div className="relative isolate overflow-hidden font-(family-name:--font-departure)">
+          <Header />
+          <NavBar />
+          <div className="flex min-h-dvh min-w-dvw mx-auto z-10">
             {children}
           </div>
-          <div className="fuzzy-overlay"></div>
+
+          <div className="fuzzy-container -z-1">
+            <FuzzyOverlay />
+          </div>
         </div>
       </body>
-      <FuzzyOverlay />
     </html>
   );
 }
