@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Header from "./_components/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -42,8 +43,9 @@ export default function RootLayout({
       <body
         className={`${vcrFont.variable} ${departFont.variable} antialiased`}
       >
-        <div className="relative isolate overflow-hidden z-0">
-          <div className="flex min-h-dvh max-w-280 mx-auto font-(family-name:--font-departure) z-10">
+        <div className="relative isolate overflow-hidden z-0 font-(family-name:--font-departure)">
+          <Header />
+          <div className="flex min-h-dvh min-w-dvw mx-auto  z-10">
             {children}
           </div>
         </div>
