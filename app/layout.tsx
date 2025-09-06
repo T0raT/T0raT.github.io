@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "./_components/Header";
+import NavBar from "./_components/NavBar";
 import FuzzyOverlay from "./_components/FuzzyOverlay";
 import "./globals.css";
 
@@ -47,6 +48,7 @@ export default function RootLayout({
         {/* Site shell */}
         <div className="relative isolate overflow-hidden z-0 font-(family-name:--font-departure)">
           <Header />
+          <NavBar />
           <div className="flex min-h-dvh min-w-dvw mx-auto z-10">
             {children}
           </div>
