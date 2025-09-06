@@ -2,12 +2,12 @@ import { RotateWords } from "../_components/RotateWords";
 
 export default function About() {
   return (
-    <main className="min-h-full mx-auto my-auto text-left">
+    <main className="min-h-full w-[500px] mx-auto my-auto px-10 text-left">
       {/* First Paragraph Section */}
       <p className="mb-2">I AM</p>
       <RotateWords
         text=""
-        words={["A FRONTEND DEVELOPER", "A GRAPHIC DESIGNER", "A GAMER"]}
+        words={["A FRONTEND DEVELOPER", "A GRAPHIC DESIGNER"]}
       />
 
       {/* Second paragraph Section */}

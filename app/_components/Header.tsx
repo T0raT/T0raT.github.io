@@ -44,7 +44,7 @@ export default function Header() {
           onClick={() => setIsModalOpen(false)}
         >
           <button className="absolute top-6 right-6 text-3xl">✕</button>
-          <ul className="space-y-8 text-2xl text-center">
+          <ul className="w-[160px] space-y-8 text-2xl text-center">
             {items.map((item, index) => {
               const isActive = pathName === item.href;
 
@@ -56,11 +56,11 @@ export default function Header() {
                       isActive ? "justify-between" : "justify-end"
                     }`}
                   >
-                    <div className={isActive ? "ml-3" : "hidden"}>►</div>
+                    <div className={isActive ? "ml-2" : "hidden"}>►</div>
                     <h3
                       className={`text-xl w-[130px] ${
                         isActive ? "bg-white text-black" : "text-white"
-                      } px-2 tracking-[0.15em]`}
+                      } tracking-[0.15em]`}
                     >
                       {item.name}
                     </h3>
