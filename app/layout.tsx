@@ -46,7 +46,7 @@ export default function RootLayout({
         className={`${vcrFont.variable} ${departFont.variable} antialiased`}
       >
         {/* Site shell */}
-        <div className="relative isolate overflow-hidden z-0 font-(family-name:--font-departure)">
+        <div className="relative isolate overflow-hidden font-(family-name:--font-departure)">
           <Header />
           <NavBar />
           <div className="flex min-h-dvh min-w-dvw mx-auto z-10">

@@ -20,15 +20,20 @@
   --breakpoint-tablet: 60rem;
   --breakpoint-desktop: 80rem;
   --breakpoint-header: 50rem;
-}
 
-@utility fuzzy-overlay {
-  position: absolute;
-  inset: -200%;
-  background-image: url("/noise.svg");
-  opacity: 0.15;
-  z-index: -1;
-  pointer-events: none;
+  --animate-border-pulse: borderPulse 4s infinite ease-in-out;
+
+  @keyframes borderPulse {
+    0% {
+      border-color: yellow;
+    }
+    50% {
+      border-color: limegreen;
+    }
+    100% {
+      border-color: yellow;
+    }
+  }
 }
 
 @utility no-scrollbar {
@@ -39,6 +44,14 @@
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+@utility fuzzy-overlay {
+  position: absolute;
+  inset: -200%;
+  background-image: url("/noise.svg");
+  opacity: 0.15;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* @media (prefers-color-scheme: dark) {
