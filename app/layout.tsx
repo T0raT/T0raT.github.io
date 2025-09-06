@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Interknot?",
 };
 
-/* Adding local fonts */
+/* Local fonts */
 const vcrFont = localFont({
   src: [
     {
@@ -42,7 +42,11 @@ export default function RootLayout({
       <body
         className={`${vcrFont.variable} ${departFont.variable} antialiased`}
       >
-        <div className="relative min-h-dvh">{children}</div>
+        <div className="relative isolate overflow-hidden z-0">
+          <div className="flex min-h-dvh max-w-280 mx-auto font-(family-name:--font-departure) z-10">
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
