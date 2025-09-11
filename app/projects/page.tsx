@@ -1,4 +1,4 @@
-import ProjectCard from "../_components/ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function ProjectDetails() {
   const allProjects = [

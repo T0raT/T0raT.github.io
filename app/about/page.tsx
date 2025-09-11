@@ -1,4 +1,4 @@
-import { RotateWords } from "../_components/RotateWords";
+import { RotateWords } from "@/components/RotateWords";
 
 export default function About() {
   return (
