@@ -1,4 +1,4 @@
-import { RotateWords } from "../_components/RotateWords";
+import { RotateWords } from "@/components/RotateWords";
 
 export default function About() {
   return (
@@ -7,7 +7,7 @@ export default function About() {
       <p className="mb-2">I AM</p>
       <RotateWords
         text=""
-        words={["A FRONTEND DEVELOPER", "A GRAPHIC DESIGNER"]}
+        words={["A FRONTEND DEVELOPER"]}
       />
 
       {/* Second paragraph Section */}
@@ -15,7 +15,7 @@ export default function About() {
       <p className="mb-2">CURRENTLY, I&apos;M STUDYING THESE TOPICS:</p>
       <RotateWords
         text=""
-        words={["EMBEDDED SYSTEMS", "FULLSTACK DEV", "COMPUTER GRAPHICS"]}
+        words={["GRAPHIC DESIGN", "FULLSTACK DEV", "COMPUTER GRAPHICS"]}
       />
 
       {/* Third paragraph Section */}

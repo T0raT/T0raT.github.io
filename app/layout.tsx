@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Header from "./_components/Header";
-import NavBar from "./_components/NavBar";
-import FuzzyOverlay from "./_components/FuzzyOverlay";
+import Header from "@/components/Header";
+import NavBar from "@/components/NavBar";
+import FuzzyOverlay from "@/components/FuzzyOverlay";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -53,9 +53,7 @@ export default function RootLayout({
             {children}
           </div>
 
-          <div className="fuzzy-container -z-1">
-            <FuzzyOverlay />
-          </div>
+          <FuzzyOverlay />
         </div>
       </body>
     </html>
