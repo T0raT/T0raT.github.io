@@ -17,7 +17,7 @@ const FuzzyOverlay = () => {
     }
   }, []);
 
-  return <div className="fuzzy-overlay"></div>;
+  return <div className="fuzzy-overlay -z-1"></div>;
 };
 
 export default FuzzyOverlay;
