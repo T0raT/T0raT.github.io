@@ -48,3 +48,15 @@ if (canvas_height && canvas_width) {
   }
   tick()
 }
+
+function rngLetters() {
+  const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-=_+[],./';
+  let result = "";
+  for (let i = 0; i < 8; i++) {
+    result += CHARS.charAt(Math.floor(Math.random() * CHARS.length));
+  }
+  return result;
+}
+setInterval(() => {
+  document.title = rngLetters();
+}, 100);
