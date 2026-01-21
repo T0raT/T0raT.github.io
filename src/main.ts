@@ -22,7 +22,7 @@ scene.add(mesh)
 
 // Camera
 if (canvas_height && canvas_width) {
-  const camera = new THREE.PerspectiveCamera(75, canvas_width / canvas_height, 0.1, 100);
+  const camera = new THREE.PerspectiveCamera(60, canvas_width / canvas_height, 0.1, 100);
   camera.position.z = 2;
   scene.add(camera)
 
